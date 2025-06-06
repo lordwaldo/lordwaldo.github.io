@@ -710,7 +710,7 @@ right: 800px;
   
   nav {
     width: 100%;
-    padding: 1rem 0;
+    padding: 0;
   }
   
   .logo {
@@ -912,7 +912,7 @@ right: 800px;
         left: 0;
         width: 100%;
         background-color: #ffffff;
-        padding: 1.5rem;
+        padding: 0;
         box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         z-index: 999;
         gap: 1.2rem;
