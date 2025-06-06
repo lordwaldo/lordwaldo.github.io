@@ -685,3 +685,204 @@ right: 800px;
     right: 600px;
   }
 }
+@media only screen and (max-width: 430px) {
+  /* General adjustments */
+  body {
+    background-size: 15px 15px;
+  }
+  
+  .container {
+    padding: 0 1rem;
+    width: 100%;
+  }
+  
+  hr {
+    margin: 0 1.5rem !important;
+  }
+  
+  /* Header/Navigation */
+  header {
+    padding: 0 1rem;
+  }
+  
+  nav {
+    width: 100%;
+    padding: 1rem 0;
+  }
+  
+  .logo {
+    left: 0;
+    font-size: 1.5rem;
+  }
+  
+  .nav-links {
+    display: none; /* Hide desktop nav */
+  }
+  
+  .hamburger {
+    display: block;
+    right: 20px;
+  }
+  
+  /* Hero Section */
+  #hero {
+    height: auto;
+    padding: 6rem 0 3rem;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-text p {
+    width: 100%;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+    padding: 0 1rem;
+  }
+  
+  .hero-text a {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+  
+  /* About Me Section */
+  #about-me {
+    height: auto;
+    padding: 3rem 0;
+  }
+  
+  .section-title {
+    margin-bottom: 2rem;
+  }
+  
+  .section-info,
+  .skill-title,
+  .sections-skills {
+    position: static;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .section-info p {
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
+    padding: 0 1rem;
+  }
+  
+  .section-info a {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    display: inline-block;
+    margin-top: 1rem;
+  }
+  
+  .sections-skills {
+    padding: 0 1rem;
+    margin-top: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  /* Projects Section */
+  #projects {
+    height: auto;
+    padding: 3rem 0;
+  }
+  
+  .section-title-project {
+    margin-bottom: 2rem;
+  }
+  
+  .project-grids {
+    width: 100%;
+    padding: 0 1rem;
+    grid-template-columns: 1fr;
+  }
+  
+  /* Contact Section */
+  #contact-me {
+    height: auto;
+    padding: 3rem 0;
+  }
+  
+  .section-title-contact {
+    margin-bottom: 2rem;
+  }
+  
+  .contact-info,
+  .contact-form {
+    position: static;
+    width: 100%;
+    padding: 0 1rem;
+    margin: 2rem auto;
+  }
+  
+  .contact-form {
+    padding: 1.5rem !important;
+  }
+  
+  .form-group textarea,
+  .form-group input {
+    padding: 1rem !important;
+    width: 100% !important;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Footer */
+  footer {
+    height: auto;
+    padding: 2rem 0;
+  }
+  
+  footer p {
+    position: static;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  /* Media Bar */
+  .media-bar {
+    flex-direction: row;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: none;
+    border-radius: 0;
+    padding: 1rem;
+    justify-content: space-around;
+  }
+  
+  .media-bar::after {
+    display: none;
+  }
+  
+  .media-bar a {
+    font-size: 1.5rem;
+  }
+  
+  .media-bar a:hover {
+    transform: translateY(-3px);
+  }
+}
+
+/* Additional optimization for landscape mode */
+@media only screen and (max-width: 930px) and (max-height: 430px) {
+  #hero, #about-me, #projects, #contact-me {
+    height: auto;
+    min-height: 100vh;
+    padding: 4rem 0;
+  }
+  
+  .hero-text h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .sections-skills {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
