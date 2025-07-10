@@ -304,6 +304,7 @@ margin-bottom: 48rem;
 }
 .contact-info h3{
     top: -90px;
+    right: 40px;
     position: absolute;
     font-size: 1.5rem;
 }
@@ -320,7 +321,7 @@ margin-bottom: 48rem;
 
 .contact-item{
     margin-top: 2rem;
-    margin-left: -3rem;
+    
 }
 
 .contact-form{
