@@ -566,57 +566,7 @@ right: 800px;
         }
     }
 
-    @media (max-width: 992px) {
-  .logo {
-    left: -5rem;
-    font-size: 1.5rem;
-  }
-  
-  .nav-links {
-    gap: 2rem;
-  }
-  
-  .hero-text h1 {
-    font-size: 3rem;
-  }
-  
-  .hero-text p {
-    width: 400px;
-    font-size: 1.2rem;
-  }
-  
-  .section-info {
-    left: 150px;
-  }
-  
-  .section-info p {
-    width: 400px;
-  }
-  
-  .sections-skills {
-    right: 50px;
-    max-width: 500px;
-  }
-  
-  .project-grids {
-    width: 600px;
-  }
-  
-  .contact-info {
-    left: 200px;
-  }
-  
-  .contact-form {
-    right: 150px;
-    width: 350px;
-    padding-right: 400px;
-  }
-  
-  footer p {
-    right: 400px;
-  }
-}
-
+    
 @media (max-width: 576px) {
   .hero-text h1 {
     font-size: 2rem;
@@ -702,7 +652,7 @@ right: 800px;
   }
   
   hr {
-    margin: 0 1.5rem !important;
+    margin: 0 1rem !important;
   }
   
   /* Header/Navigation */
@@ -713,6 +663,7 @@ right: 800px;
   nav {
     width: 100%;
     padding: 0;
+    height: 75px;
   }
   
   .logo {
@@ -889,53 +840,3 @@ right: 800px;
     transform: translateY(-3px);
   }
 }
-
-/* Additional optimization for landscape mode */
-@media only screen and (max-width: 930px) and (min-height: 430px) {
-  #hero, #about-me, #projects, #contact-me {
-    height: auto;
-    min-height: 100vh;
-    padding: 4rem 0;
-  }
-  
-  .hero-text h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .sections-skills {
-    grid-template-columns: repeat(3, 1fr);
-  }
-   .nav-links {
-        display: none; /* Initially hidden on mobile */
-        flex-direction: column;
-        position: absolute;
-        top: 80px;
-        left: 0;
-        width: 100%;
-        background-color: #ffffff;
-        padding: 1.5rem;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        z-index: 999;
-        gap: 1.2rem;
-    }
-    
-    .nav-links.active {
-        display: flex; /* Only shown when active class is present */
-    }
-    
-    .hamburger {
-        display: block;
-        position: absolute;
-        right: 30px;
-        top: 25px;
-        font-size: 1.8rem;
-        
-    }
-    .nav-links a {
-        font-size: 1.1rem;
-        padding: 0.5rem 0;
-    }
-}
-
-
