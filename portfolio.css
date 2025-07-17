@@ -336,6 +336,7 @@ margin-bottom: 48rem;
     padding-right: 530px;
     padding-left: 70px;
     padding-top: 25px;
+    padding-bottom:20px;
     color:rgb(121, 121, 121);
 }
 
@@ -354,15 +355,18 @@ margin-bottom: 48rem;
 }
 
 .btn {
-  width: 100%;
-  background-color: #003bb9;
-  color: white;
+  width: 20%;
+  position: absolute;
+  background-color: #275aca;
+  color: rgb(255, 255, 255);
   border: none;
   border-radius: 6px;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 400;
   cursor: pointer;
   transition: background-color 0.3s;
+  padding: 9px 0;
+  top: 92%;
 }
 
 .btn:hover {
@@ -801,6 +805,9 @@ right: 800px;
     padding: 1rem !important;
     width: 100% !important;
     margin-bottom: 1.5rem;
+  }
+  .btn{
+    position: relative;
   }
   
   /* Footer */
